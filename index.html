@@ -6,6 +6,7 @@
     }
     
     /* Style tab links */
+    
     .tablinks {
       background-color: #555;
       color: white;
@@ -215,6 +216,7 @@
         max-width: 1700px;
         margin: 0 auto;
         line-height: 1.3;
+        color: #222;
     }
     
     .session {
@@ -232,40 +234,44 @@
         display: block;
     }
     
+    .session-time{
+        color: darkslategray;
+        font-family: Verdana;
+        font-size: 0.9em;
+    }
+    
     .session-presenter-title{
+        color: darkslategray;
         font-weight: normal;
+        text-transform: uppercase;
+        font-family: Verdana;
     }
     
     .session-presenter{
-        font-weight: 500;
-        margin-bottom: 20
+        font-weight: 700;
+        margin-bottom: 10;
+        margin-top: 10;
+        text-transform: uppercase;
+        font-size: 0.9em;
     }
+    
     
     .session-title,
     .time-slot {
         margin: 0;
-        font-size: 1.5em;
+        font-size: 1.4em;
         text-transform: uppercase;
     }
     
-    .session-title a {
-    
-        color: #fff;
-        /*text-decoration-style: dotted;*/
-        
-        &:hover {
-            font-style: italic;
-        }
-        
-        &:focus {
-            outline: 2px dotted rgba(255,255,255,.8);
-        }
+    .session-title{
+        font-family: Verdana;
+        font-size: 1.3em;
     }
     
     .attendee{
         border-radius: 5px;
         margin-bottom: 15;
-        font-size: 1.5em;
+        font-size: 1.2em;
         color: black;
         font-weight: 500;
         background-color: #eeefef;
@@ -279,34 +285,40 @@
         font-size:1em;
     }
     
+    .time-slot {
+        color: darkslategray;
+        font-family: Verdana;
+        font-size: 0.9em;
+    }
+    
     .track-1 {
-        background-color: rgb(23, 192, 218);
-        color: #fff;
+        background-color: C0EDF4;
+        color: #222;
     }
     
     .track-2 {
-        background-color: rgb(70, 171, 98);
-        color: #fff;
+        background-color: B5DDC0;
+        color: #222;
     }
     
     .track-3 {
-        background-color: rgb(144, 92, 186);
-        color: #fff;
+        background-color: E3D6F0;
+        color: #222;
     }
     
     .track-4 {
-        background-color: rgb(237, 53, 73);
-        color: #fff;
+        background-color: F7A9B2;
+        color: #222;
     }
     
     .track-5 {
-        background-color: rgb(243, 160, 38);
-        color: #fff;
+        background-color: F7CB89;
+        color: #222;
     }
     
     .track-topicroom {
-        background-color: rgb(14, 29, 56);
-        color: #fff;
+        background-color: C4C8CF;
+        color: #222;
     }
     
     .track-all {
@@ -381,6 +393,19 @@
     <div class="schedule" aria-labelledby="schedule-heading">
         
         <h2 class="time-slot" style="grid-row: time-0700;">7:00am</h2>
+        <h2 class="time-slot" style="grid-row: time-0730;">7:30am</h2>
+        <h2 class="time-slot" style="grid-row: time-0800;">8:00am</h2>
+        <h2 class="time-slot" style="grid-row: time-0830;">8:30am</h2>
+        <h2 class="time-slot" style="grid-row: time-0900;">9:00am</h2>
+        <h2 class="time-slot" style="grid-row: time-0930;">9:30am</h2>
+        <h2 class="time-slot" style="grid-row: time-1000;">10:00am</h2>
+        <h2 class="time-slot" style="grid-row: time-1030;">10:30am</h2>
+        <h2 class="time-slot" style="grid-row: time-1100;">11:00am</h2>
+        <h2 class="time-slot" style="grid-row: time-1130;">11:30am</h2>
+        <h2 class="time-slot" style="grid-row: time-1200;">12:00pm</h2>
+        <h2 class="time-slot" style="grid-row: time-1230;">12:30pm</h2>
+        <h2 class="time-slot" style="grid-row: time-1300;">1:00pm</h2>
+        <h2 class="time-slot" style="grid-row: time-1330;">1:30pm</h2>
     
         <div class="session session-1 track-1" style="grid-column: track-1-start / track-5-end; grid-row: time-0700 / time-0725;">
             <span class="session-time">7:00 - 7:25</span>
@@ -395,8 +420,6 @@
             <span class="session-track">The Honourable Joyce Murray , Canada's Minister of Digital Government, has a mandate to lead work across departments to transition to a more digital government to improve services for citizens. Her background at the provincial and federal level, and her longstanding advocacy for sustainability, give her a unique perspective on government collaboration and the greening of technology. As we kick off the Digital Nations at FWD50, Minister Murray lays out her vision for digital government in Canada and around the globe.</span>
             <span class="session-presenter">Joyce Murray <span class="session-presenter-title">Canadian Minister of Digital Government</span></span>
         </div>  
-
-        <h2 class="time-slot" style="grid-row: time-0730;">7:30am</h2>
     
         <div class="session session-3 track-1" style="grid-column: track-1-start / track-5-end; grid-row: time-0745 / time-0805;">
              <span class="session-time">7:45 - 8:05</span>
@@ -404,8 +427,6 @@
             <span class="session-track">Helmuth von Moltke said that "no plan of operations extends with any certainty beyond the first contact with the main hostile force." Mike Tyson put it more succinctly: "Everybody has a plan until they get punched in the mouth." Digital services aren't as confrontational, but the lesson remains the same: Tactics and implementation are vastly different from theory and architecture. And the office of the CIO is where theory collides headlong with the realities of implementation. In this chain reaction panel, we'll join four leads from Digital Nations member countries as they lay out their journey to the highest levels of digital government, and discuss the tradeoffs of turning idealistic plans into concrete actions.</span>
             <span class="session-presenter">Siim Sikkut <span class="session-presenter-title">Government CIO of Estonia, Deputy Secretary General for IT and Telecom in Ministry of Economic Affairs and Communications</span></span>
         </div>
-
-        <h2 class="time-slot" style="grid-row: time-0800;">8:00am</h2>
     
         <div class="session session-4 track-1" style="grid-column: track-1-start / track-5-end; grid-row: time-0805 / time-0825;">
              <span class="session-time">8:05 - 8:25</span>
@@ -421,8 +442,6 @@
             <span class="session-track">Never have we been so called as humanity to come together and awaken to the destruction our systems are causing and that we have been blindly building for decades. What we may be emerging upon is a greater awareness of our own fragility in economic, social and environmental systems that we do not control, we cannot predict and that will never be status quo again. In the spirit of building back better, this discussion will invite us to explore Indigenous wisdom and ways of being as a key to actually learning the lessons we are living today and innovating forward in a way that achieves living in right relation, as Indigenous peoples have for thousands of years on the land you walk today.</span>
         <span class="session-presenter">Denise Williams <span class="session-presenter-title">CEO, First Nations Technology Council</span></span>
         </div>     
-
-        <h2 class="time-slot" style="grid-row: time-0830;">8:30am</h2>
     
         <div class="session session-6 track-1" style="grid-column: track-1-start / track-5-end; grid-row: time-0835 / time-0855;">
              <span class="session-time">8:35 - 8:55</span>
@@ -436,17 +455,11 @@
          <h3 class="session-title">MORNING WRAP UP</h3>
             <span class="session-track">Your hosts wrap up the morning and get you ready for an afternoon of learning and networking!</span>
         <span class="session-presenter">Alistair Croll <span class="session-presenter-title">Co-founder & Chair, FWD50</span></span>
-        </div>
-        
-        <h2 class="time-slot" style="grid-row: time-0900;">9:00am</h2>
+        </div>  
     
         <div class="session session-8 track-all" style="grid-column: track-1-start / track-5-end; grid-row: time-0900 / time-1030;">
             <h3 class="session-title">Morning break</h3>
         </div>
-
-        <h2 class="time-slot" style="grid-row: time-0930;">9:30am</h2>
-        <h2 class="time-slot" style="grid-row: time-1000;">10:00am</h2>
-        <h2 class="time-slot" style="grid-row: time-1030;">10:30am</h2>
     
         <div class="session session-9 track-1" style="grid-column: track-1-start / track-1-end; grid-row: time-1030 / time-1110;">
              <span class="session-time">10:30 - 11:10</span>
@@ -492,8 +505,6 @@
         <span class="session-presenter">Pia Andrews <span class="session-presenter-title">Open and digital government expert, Special Advisor at Service Canada</span></span>
         <span class="attendee">AMANDA</span>
         </div>
-
-        <h2 class="time-slot" style="grid-row: time-1100;">11:00am</h2>
     
     <!-- 1115AM START --!>
     
@@ -537,9 +548,6 @@
         <span class="session-presenter">Stephen Yates <span class="session-presenter-title">Principal Product Manager, Canadian Digital Service (CDS)</span></span>
         <span class="attendee">AMANDA</span>
         </div>
-
-        <h2 class="time-slot" style="grid-row: time-1130;">11:30am</h2>
-        <h2 class="time-slot" style="grid-row: time-1200;">12:00pm</h2>
     
     <!-- 1200PM START --!>
     
@@ -561,7 +569,7 @@
         <span class="session-presenter">Dr. Sean Hill <span class="session-presenter-title">Director, Krembil Centre for Neuroinformatics at Centre for Addiction and Mental Health (CAMH) Foundation</span></span>
         </div>
     
-        <div class="session session-11 track-3" style="grid-column: track-3-start / track-3-end; grid-row: time-1200 / time-1330;">
+        <div class="session session-11 track-3" style="grid-column: track-3-start / track-3-end; grid-row: time-1200 / time-1325;">
              <span class="session-time">12:00 - 13:30</span>
          <h3 class="session-title">DELIVERING AT THE NEED OF SPEED</h3>
             <span class="session-track">To join the Zoom session: https://zoom.us/j/99445703621?pwd=bi9oNk9vMzVJcFFhdEdNODhvcEpjUT09<br><br>While chronically underfunded, agile digital service teams have proven that they are a precious resource within government that can be trusted to deliver at the speed of need in a crisis. What is it about the way they are set up that allows them to work nimbly. Learn about how they are set up to respond quickly in times of crisis, what challenges they are able to overcome quickly and which ones they continue to confront, and any lessons they have learned in the last few months that governments all over need to take into account. Building on these lessons learned from three jurisdictions, youíll develop a framework for rapid response ñ setting up multi-disciplinary teams, choosing the right opportunities and developing agile governance structures. This workshop provides perspectives and examples from municipal, provincial and federal governments. Giving a cross-jurisdictional lens to help you set your organization up to deliver agile, responsive and user-focused products.</span>
@@ -570,7 +578,7 @@
         <span class="attendee">AMANDA</span>
         </div>
     
-        <div class="session session-11 track-4" style="grid-column: track-4-start / track-4-end; grid-row: time-1200 / time-1330;">
+        <div class="session session-11 track-4" style="grid-column: track-4-start / track-4-end; grid-row: time-1200 / time-1325;">
              <span class="session-time">12:00 - 13:30</span>
          <h3 class="session-title">MOBILE 5G: BEYOND JUST SPEED</h3>
             <span class="session-track">To join the Zoom session: https://zoom.us/j/97951206949?pwd=Y1NVZUpmaEtxald2TmFtSnJGbWFQQT09
@@ -589,8 +597,6 @@
         <span class="session-presenter">Nitika Agarwal <span class="session-presenter-title">Chief Operating Officer, Apolitical</span></span>
         <span class="session-presenter">Tai McLennan <span class="session-presenter-title">Head of Scottish Digital Academy, Scottish Government</span></span>
         </div>
-
-        <h2 class="time-slot" style="grid-row: time-1230;">12:30pm</h2>
     
     <!-- 1245PM START --!>
     
@@ -610,8 +616,6 @@
         <span class="session-presenter">Amanda Makulec <span class="session-presenter-title">Public health data visualization designer & connector</span></span>
         <span class="attendee">AMANDA</span>
         </div>
-
-        <h2 class="time-slot" style="grid-row: time-1300;">1:00pm</h2>
     
     <!-- 1:25PM START --!>
     
@@ -620,8 +624,6 @@
          <h3 class="session-title">CLOSING REMARKS</h3>
         <span class="session-presenter">Alistair Croll <span class="session-presenter-title">Co-founder & Chair, FWD50</span></span>
         </div>
-
-        <h2 class="time-slot" style="grid-row: time-1330;">1:30pm</h2>
     
     <!-- 1:30PM START --!>
     
@@ -661,6 +663,19 @@
     <div class="schedule" aria-labelledby="schedule-heading">
         
         <h2 class="time-slot" style="grid-row: time-0700;">7:00am</h2>
+        <h2 class="time-slot" style="grid-row: time-0730;">7:30am</h2>
+        <h2 class="time-slot" style="grid-row: time-0800;">8:00am</h2>
+        <h2 class="time-slot" style="grid-row: time-0830;">8:30am</h2>
+        <h2 class="time-slot" style="grid-row: time-0900;">9:00am</h2>
+        <h2 class="time-slot" style="grid-row: time-0930;">9:30am</h2>
+        <h2 class="time-slot" style="grid-row: time-1000;">10:00am</h2>
+        <h2 class="time-slot" style="grid-row: time-1030;">10:30am</h2>
+        <h2 class="time-slot" style="grid-row: time-1100;">11:00am</h2>
+        <h2 class="time-slot" style="grid-row: time-1130;">11:30am</h2>
+        <h2 class="time-slot" style="grid-row: time-1200;">12:00pm</h2>
+        <h2 class="time-slot" style="grid-row: time-1230;">12:30pm</h2>
+        <h2 class="time-slot" style="grid-row: time-1300;">1:00pm</h2>
+        <h2 class="time-slot" style="grid-row: time-1330;">1:30pm</h2>
     
     <div class="session session-1 track-1" style="grid-column: track-1-start / track-5-end; grid-row: time-0700 / time-0715;">
             <span class="session-time">7:00 - 7:15</span>
@@ -676,8 +691,6 @@
             <span class="session-presenter">Alistair Croll <span class="session-presenter-title">Co-founder & Chair, FWD50</span></span>
             <span class="session-presenter">Amanda Renteria <span class="session-presenter-title">Chief Executive Officer, Code for America</span></span>
         </div>
-
-        <h2 class="time-slot" style="grid-row: time-0730;">7:30am</h2>
     
         <div class="session session-3 track-1" style="grid-column: track-1-start / track-5-end; grid-row: time-0735 / time-0755;">
             <span class="session-time">7:35 - 7:55</span>
@@ -685,8 +698,6 @@
         <span class="session-track">The introduction of technology does not always have the salubrious effect desired. Local conditions, side- conditions, societal and cultural conditions have roles to play in the useful uptake of new technology intended to make lives better. Access to the Internet is a good case in point and has had mixed utility in the several decades of its existence. Vint will explore these issues briefly in an attempt to stimulate serious thinking about extracting the best outcomes from the investment in Internet access that is being made around the world.</span>
             <span class="session-presenter">Vinton G. Cerf <span class="session-presenter-title">Vice President & Chief Internet Evangelist, Google Cloud</span></span>
         </div> 
-
-        <h2 class="time-slot" style="grid-row: time-0800;">8:00am</h2>
     
         <div class="session session-4 track-1" style="grid-column: track-1-start / track-5-end; grid-row: time-0755 / time-0815;">
             <span class="session-time">7:55 - 8:15</span>
@@ -708,8 +719,6 @@
         <span class="session-track">Citizens are expecting their government to deliver modern, timely and relevant services. Government officials are challenged with delivering on that expectation when dealing with legacy ìsiloídî systems and processes.What does one do? Join ServiceNowís Chief Technology Officer for Global Governments, Bob Osborn, on an informative journey to transforming government service delivery capabilities and meeting the needs of citizens today and into the future!</span>
             <span class="session-presenter">Bob Osborn <span class="session-presenter-title">CTO, GLobal Governments, ServiceNow</span></span>
         </div> 
-
-        <h2 class="time-slot" style="grid-row: time-0830;">8:30am</h2>
     
         <div class="session session-7 track-1" style="grid-column: track-1-start / track-5-end; grid-row: time-0835 / time-0855;">
             <span class="session-time">8:35 - 8:55</span>
@@ -726,16 +735,10 @@
             <span class="session-track">Your hosts wrap up the morning and get you ready for an afternoon of learning and networking!</span>
         <span class="session-presenter">Alistair Croll <span class="session-presenter-title">Co-founder & Chair, FWD50</span></span>
         </div>  
-
-        <h2 class="time-slot" style="grid-row: time-0900;">9:00am</h2>
     
         <div class="session session-8 track-all" style="grid-column: track-1-start / track-5-end; grid-row: time-0900 / time-1030;">
             <h3 class="session-title">Morning break</h3>
         </div>
-
-        <h2 class="time-slot" style="grid-row: time-0930;">9:30am</h2>
-        <h2 class="time-slot" style="grid-row: time-1000;">10:00am</h2>
-        <h2 class="time-slot" style="grid-row: time-1030;">10:30am</h2>
     
     <!-- 1030 AM START --!>
     
@@ -745,6 +748,25 @@
             <span class="session-track">Estonia has pioneered many digital government fundamentals. Now, in an ambitious project to unify government interactions, the country is launching a chatbotóa single agent that can interact conversationally with citizens. Getting this to work across disconnected departments, and presenting a consistent, accessible interface to users, is a huge challenge. In 2019, Estonia's CTO, Kristo Vaher, shared his plans with the FWD50 audience. This year, he returns with an update in a conversation with Kathy Pham. Kathy's background in computer science, civic tech, and inclusive design brings the ideal perspective to consider Estonia's project; in this session, Kathy and Kristo will discuss public sector product management, chatbots, and corralling the departments and suppliers needed to make this vision a reality.</span>
         <span class="session-presenter">Kathy Pham <span class="session-presenter-title">Fellow and Faculty, Product and Society, Harvard University</span></span>
         <span class="session-presenter">Kristo Vaher <span class="session-presenter-title">Chief Technology Officer, Republic of Estonia / The Estonian Government</span></span>
+        </div>
+    
+        <div class="session session-9 track-2" style="grid-column: track-2-start / track-2-end; grid-row: time-1030 / time-1040;">
+             <span class="session-time">10:30 - 10:40</span>
+         <h3 class="session-title">EXECTUIVE TRACK | PUBLIC AND PRIVATE SECTOR COLLABORATION IN A DATA-DRIVEN ECONOMY</h3>
+            <span class="session-track">Join CIO Strategy Council Co-Chairs, Marc Brouillard and Jim Balsillie in conversation on some of the most highly rated and pressing digital policy areas to kick-off the afternoonís session with the Council.</span>
+        <span class="session-presenter">Jim Balsillie <span class="session-presenter-title">Co-Chair, CIO Strategy Council, Former Co-CEO, RIM</span></span>
+        <span class="session-presenter">Marc Brouillard <span class="session-presenter-title">Acting Chief Information Officer, Government of Canada, Treasury Board of Canada Secretariat</span></span>
+        <span class="session-presenter">Keith Jansa <span class="session-presenter-title">Executive Director, CIO Strategy Council</span></span>
+        </div>
+    
+        <div class="session session-9 track-2" style="grid-column: track-2-start / track-2-end; grid-row: time-1040 / time-1110;">
+             <span class="session-time">10:40 - 11:10</span>
+         <h3 class="session-title">EXECTUIVE TRACK | DIGITAL COOPERATION AND STANDARDS IN A DATA-DRIVEN ECONOMY</h3>
+            <span class="session-track">Join an interactive panel session on fostering digital cooperation in the wake of a pandemic. Examine the intersection between the public and private sector in shaping marketplace rules and policy-oriented standards that govern our data and security.</span>
+        <span class="session-presenter">Keith Jansa <span class="session-presenter-title">Executive Director, CIO Strategy Council</span></span>
+        <span class="session-presenter">Joni Brennan <span class="session-presenter-title">PresidentDigital ID & Authentication Council of Canada (DIACC)</span></span>
+        <span class="session-presenter">Chantal Guay <span class="session-presenter-title">CEO, Standards Council of Canada</span></span>
+        <span class="session-presenter">Dr. Daniel Araya <span class="session-presenter-title">Senior Partner, World Legal Summit</span></span>
         </div>
     
         <div class="session session-9 track-3" style="grid-column: track-3-start / track-3-end; grid-row: time-1030 / time-1200;">
@@ -795,8 +817,6 @@
     
         <span class="attendee">AMANDA</span>
         </div>
-
-        <h2 class="time-slot" style="grid-row: time-1100;">11:00am</h2>
     
     <!-- 1115 AM START --!>
     
@@ -809,6 +829,17 @@
         <span class="attendee">AMANDA</span>
         </div>
     
+        <div class="session session-9 track-2" style="grid-column: track-2-start / track-2-end; grid-row: time-1115 / time-1155;">
+             <span class="session-time">11:15 - 11:55</span>
+         <h3 class="session-title">EXECTUIVE TRACK | DATA PROTECTION LAWS - PRIVACY, HUMAN RIGHTS, ETHICS AND BEYOND</h3>
+            <span class="session-track">Mounting calls for an overhaul to privacy and data protection regimes around the world have some countries enacting a new set of online rights for citizens, while others are embarking on needed changes. Explore how companies and governments are not only addressing privacy rules in changing regulatory environments, but more broadly the public responsibility for data.</span>
+        <span class="session-presenter">Keith Jansa <span class="session-presenter-title">Executive Director, CIO Strategy Council</span></span>
+        <span class="session-presenter">Dr. Ann Cavoukian <span class="session-presenter-title">Executive Director, Global Privacy & Security by Design Centre</span></span>
+        <span class="session-presenter">Toomas Lukk <span class="session-presenter-title">Ambassador, Embassy of Estonia</span></span>
+        <span class="session-presenter">Commisioner Daniel Therrien <span class="session-presenter-title">Privacy Commissioner, Canada</span></span>
+        <span class="session-presenter">Taylor Owen <span class="session-presenter-title">Beaverbrook Chair, Media, Ethics & Communications, Max Bell School, McGill University</span></span>
+        </div>
+    
         <div class="session session-10 track-5" style="grid-column: track-5-start / track-5-end; grid-row: time-1115 / time-1155;">
              <span class="session-time">11:15 - 11:55</span>
          <h3 class="session-title">gcxchange. The future of communication and collaboration in the GC</h3>
@@ -817,9 +848,6 @@
         <span class="session-presenter">Christopher Jaja <span class="session-presenter-title">Director, Enterprise Digital Workspace, Treasury Board of Canada Secretariat</span></span>
         <span class="session-presenter">Melanie Love <span class="session-presenter-title">Chief, Strategic Communications and Ministerial Affairs, Treasury Board of Canada Secretariat</span></span>
         </div>
-
-        <h2 class="time-slot" style="grid-row: time-1130;">11:30am</h2>
-        <h2 class="time-slot" style="grid-row: time-1200;">12:00pm</h2>
     
     <!-- 1200 PM START --!>
     
@@ -830,6 +858,16 @@
         <span class="session-presenter">Annette Hester <span class="session-presenter-title">TheHesterView</span></span>
         <span class="session-presenter">Mathew Ingram <span class="session-presenter-title">Chief Digital Writer, Columbia Journalism Review</span></span>
         <span class="session-presenter">Ronaldo Lemos <span class="session-presenter-title">Lawyer, Chief Scientific Officer, Institute for Technology & Society of Rio de Janeiro</span></span>
+        </div>
+    
+        <div class="session session-9 track-2" style="grid-column: track-2-start / track-2-end; grid-row: time-1200 / time-1240;">
+             <span class="session-time">12:00 - 12:40</span>
+         <h3 class="session-title">EXECTUIVE TRACK | PRESERVING ALGORITHMIC INTEGRITY IN AI SYSTEMS</h3>
+            <span class="session-track">Examine novel approaches and essential controls to safeguard algorithms and maintain confidence and trust in AI systems in an interactive panel session with industry and government leaders. Explore how COVID-19 has transformed advanced analytics and responsible AI.</span>
+        <span class="session-presenter">Keith Jansa <span class="session-presenter-title">Executive Director, CIO Strategy Council</span></span>
+        <span class="session-presenter">Jana Eggers <span class="session-presenter-title">CEO, Nara Logics, Inc.</span></span>
+        <span class="session-presenter">John C. Havens <span class="session-presenter-title">Executive Director, The IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems</span></span>
+        <span class="session-presenter">Marc Brouillard <span class="session-presenter-title">Acting Chief Information Officer, Government of Canada, Treasury Board of Canada Secretariat</span></span>
         </div>
     
         <div class="session session-10 track-4" style="grid-column: track-4-start / track-4-end; grid-row: time-1200 / time-1240;">
@@ -850,14 +888,12 @@
         <span class="attendee">AMANDA</span>
         </div>
     
-        <div class="session session-10 track-3" style="grid-column: track-3-start / track-3-end; grid-row: time-1200 / time-1330;">
+        <div class="session session-10 track-3" style="grid-column: track-3-start / track-3-end; grid-row: time-1200 / time-1325;">
              <span class="session-time">12:00 - 13:30</span>
          <h3 class="session-title">APPLIED AI: WHAT'S POSSIBLE AND WHAT'S WORKING IN AI FOR GOVERNMENT?</h3>
             <span class="session-track">To join the Zoom session: https://zoom.us/j/96701043031?pwd=V3VvQlZWcnlsTk9oYnNJcyt4aHZkQT09<br>This workshop answers the questions: ìwhatís possible,î ìwhatís working,î and, ìwhere can I apply AI?î in government. We will provide a view across both technologies and use cases to provide a better understanding of which agencies are getting traction and whatís already making an impact in the real-world.</span>
         <span class="session-presenter">Troy Angrignon</span>
         </div>
-
-        <h2 class="time-slot" style="grid-row: time-1230;">12:30pm</h2>
     
     <!-- 1245 PM START --!>
     
@@ -865,12 +901,21 @@
              <span class="session-time">12:45 - 13:25</span>
          <h3 class="session-title">CAN THE PLATFORM BE OF SERVICE? ñ THE COMMITMENT TO PERSON-CENTERED DESIGN WHEN ADOPTING TECH MODELS IN THE PUBLIC SECTOR</h3>
             <span class="session-track">Business model concepts originated within entrepreneurship and e-commerce and have migrated to the public sector. But when translating these models to government, often the core logic gets lost in translation. How do we take the best from concepts like platform-as-a-service into government while avoiding the worst elements of tech giant behavior and public sector bureaucracy? This discussion will explore the most useful concepts that originate from business model logic but centered in key framing questions: How might we participate with users to define what it is that we value? When replicating and adapting a platform-as-a-service model, how are we creating conditions for developers and innovators to accelerate the creation of new products and services for constituents? How do we maintain commitments to person-centered design methodologies, agile implementation approaches, rigorous ethical review, and algorithmic auditing? How do we make explicit and inclusive the discussion of what values get embedded in tools?</span>
-        <span class="session-presenter">Jennifer van der Meer <span class="session-presenter-title">Model Design/span></span>
+        <span class="session-presenter">Jennifer van der Meer <span class="session-presenter-title">Model Design</span></span>
         <span class="session-presenter">Katherine Benjamin <span class="session-presenter-title">Deputy CTO for Digital Services, NYC Mayor's Office of the CTO</span></span>
         <span class="session-presenter">Michelle Shevin <span class="session-presenter-title">Senior Program Manager of the Public Interest Technology, Catalyst Fund, Ford Foundation</span></span>
+            <span class="attendee">AMANDA</span>
+    </div>
+    
+        <div class="session session-9 track-2" style="grid-column: track-2-start / track-2-end; grid-row: time-1245 / time-1325;">
+             <span class="session-time">12:45 - 13:25</span>
+         <h3 class="session-title">EXECTUIVE TRACK | OPTIMIZING DIGITAL SECURITY AND CYBER RESILIENCY IN AN ERA OF IoT PROLIFERATION</h3>
+            <span class="session-track">What makes IoT different? Interact with leading public and private sector experts in examining how COVID-19 accelerated IoT, its limitations, and turned recommended approaches for applying commonly accepted security practices across growing IoT data value chains.</span>
+        <span class="session-presenter">Keith Jansa <span class="session-presenter-title">Executive Director, CIO Strategy Council</span></span>
+        <span class="session-presenter">Michael Girard <span class="session-presenter-title">Senior Fellow, CIGI</span></span>
+        <span class="session-presenter">Dr. Anita Finnegan <span class="session-presenter-title">CEO & President, Nova leah</span></span>
+        <span class="session-presenter">Tyson Johnson <span class="session-presenter-title">Chief Executive Officer, CyberNB / CIPnet</span></span>
         </div>
-
-        <h2 class="time-slot" style="grid-row: time-1300;">1:00pm</h2>
     
     <!-- 1:25PM START --!>
     
@@ -880,12 +925,294 @@
         <span class="session-presenter">Alistair Croll <span class="session-presenter-title">Co-founder & Chair, FWD50</span></span>
         </div>
     
+        <div class="session session-1 track-topicroom" style="grid-column: track-1-start / track-1-end; grid-row: time-1330 / time-1430;">
+            <span class="session-time">1330 - 14:30</span>
+        <h3 class="session-title">TOPIC ROOM: THE ROLE OF ALLIES IN REAL INCLUSION</h3>        
+            <span class="session-track">Following their earlier discussion, join Sarah Paquet, Martin Bernier and Luc Villeneuve for an open dialogue on the role of allies in promoting equality and inclusion.</span>
+            <span class="session-presenter">Luc Villeneuve <span class="session-presenter-title">President, Benchmark Corp.</span></span>
+            <span class="session-presenter">Martin Bernier, MBA <span class="session-presenter-title">Chief Information Officer, University of Ottawa</span></span>
+            <span class="session-presenter">Sarah Paquet <span class="session-presenter-title">Executive Vice-President, Shared Services Canada</span></span>
+        </div>
+    
+        <div class="session session-1 track-topicroom" style="grid-column: track-3-start / track-3-end; grid-row: time-1330 / time-1430;">
+            <span class="session-time">1330 - 14:30</span>
+        <h3 class="session-title">TOPIC ROOM: THE FUTURE OF DIGITAL GOVERNANCE</h3>        
+            <span class="session-track">No aspect of what government does has been untouched by the impacts of the digital era. Yet many of our institutions of governance have not kept pace with these changes. Join experts affiliated with the Institute on Governance for conversations that will explore different aspects of the governance challenges that government are facing today, including: Enabling world-class digital services across traditional silos; Governing digital ethics; Trust in government in the digital era, and; Evolving the internal enablers of digital government.</span>
+            <span class="session-presenter">Peter Bruce <span class="session-presenter-title">Senior Associate, Institute on Governance</span></span>
+            <span class="session-presenter">Ryan Androsoff <span class="session-presenter-title">Director, Digital Leadership, Institute on Governance</span></span>
+            <span class="session-presenter">Shingai Manjengwa <span class="session-presenter-title">CEO Fireside Analytics Inc.</span></span>
+            <span class="session-presenter">Toby Fyfe <span class="session-presenter-title">President and CEO, Institute on Governance</span></span>
+        <span class="attendee">AMANDA</span>
+        </div>
+    
+        <div class="session session-1 track-topicroom" style="grid-column: track-4-start / track-4-end; grid-row: time-1330 / time-1430;">
+            <span class="session-time">1330 - 14:30</span>
+        <h3 class="session-title">TOPIC ROOM WITH SERVICENOW: SERVICE-FOCUSED GOVERNMENT</h3>        
+            <span class="session-track">Fuel mission-oriented innovation to accelerate better outcomes. Connect teams, workflows, and systems to drive digital transformation in government services.</span>
+        </div>
+    
+        <div class="session session-1 track-topicroom" style="grid-column: track-5-start / track-5-end; grid-row: time-1330 / time-1430;">
+            <span class="session-time">1330 - 14:30</span>
+        <h3 class="session-title">TOPIC ROOM WITH IBM AND REDHAT: ADOPTING OPEN SOURCE CULTURE IN PUBLIC SECTOR</h3>        
+            <span class="session-track">With the move to cloud, we need to work in new ways. Join us for an interactive session to further explore the Value of Open Source for Public Sector. Let's discuss real examples with real client situations.</span>
+        </div>
+    
+        <div class="session session-1 track-topicroom" style="grid-column: track-2-start / track-2-end; grid-row: time-1330 / time-1430;">
+            <span class="session-time">1330 - 14:30</span>
+        <h3 class="session-title">POLICY IGNITE</h3>        
+            <span class="session-track">To join the Zoom session: https://us02web.zoom.us/j/89991747321?pwd=elpMc2NjU2V0SlJNUUlMaEtQS1RZQT09<br>
+    Meeting ID: 899 9174 7321<br>
+    Passcode: See FWD50 event website<br><br>
+    
+    Policy Ignite, a grassroots initiative to highlight innovative new ideas and bring the policy community together, is hosting a special FWD50 Topic Room exploring the intersection of race and technology. Come listen to dynamic and provocative 5-minute Ignite-style presentations on the future of surveillance, data and diversity, social media spaces for organizing and advocacy, and more. Then stick around to engage with our speakers and other participants!</span>
+        </div>
+    
     </div>
     </div>
     
     <div id="Fri" class="tabcontent">
-      <h3>Contact</h3>
-      <p>Get in touch, or swing by for a cup of coffee.</p>
+    
+    <div class="schedule" aria-labelledby="schedule-heading">
+        
+        <h2 class="time-slot" style="grid-row: time-0700;">7:00am</h2>
+        <h2 class="time-slot" style="grid-row: time-0730;">7:30am</h2>
+        <h2 class="time-slot" style="grid-row: time-0800;">8:00am</h2>
+        <h2 class="time-slot" style="grid-row: time-0830;">8:30am</h2>
+        <h2 class="time-slot" style="grid-row: time-0900;">9:00am</h2>
+        <h2 class="time-slot" style="grid-row: time-0930;">9:30am</h2>
+        <h2 class="time-slot" style="grid-row: time-1000;">10:00am</h2>
+        <h2 class="time-slot" style="grid-row: time-1030;">10:30am</h2>
+        <h2 class="time-slot" style="grid-row: time-1100;">11:00am</h2>
+        <h2 class="time-slot" style="grid-row: time-1130;">11:30am</h2>
+        <h2 class="time-slot" style="grid-row: time-1200;">12:00pm</h2>
+        <h2 class="time-slot" style="grid-row: time-1230;">12:30pm</h2>
+        <h2 class="time-slot" style="grid-row: time-1300;">1:00pm</h2>
+        <h2 class="time-slot" style="grid-row: time-1330;">1:30pm</h2>
+    
+    <div class="session session-1 track-1" style="grid-column: track-1-start / track-5-end; grid-row: time-0700 / time-0715;">
+            <span class="session-time">7:00 - 7:15</span>
+        <h3 class="session-title">WELCOME BACK</h3>        
+            <span class="session-track">Alistair and Rebecca kick off the day and highlight some of the amazing sessions we have planned.</span>
+            <span class="session-presenter">Alistair Croll <span class="session-presenter-title">Co-founder & Chair, FWD50</span></span>
+        </div>
+    
+        <div class="session session-2 track-1" style="grid-column: track-1-start / track-5-end; grid-row: time-0715 / time-0735;">
+            <span class="session-time">7:15 - 7:35</span>
+        <h3 class="session-title">TODAY'S PROBLEMS, TOMORROW'S TOOLKIT: THE PUBLIC SECTOR AND THE FUTURE OF WORK</h3>        
+            <span class="session-track">Around the world, trust in governments is at an all-time low. Many have lost capacity and confidence. Yet only governments can solve the interlocking crises of health, employment, racism and the environment that the world confronts. The answer to our problems is not to abandon the idea of government, but to reinvent it. In this conversation with Alistair Croll, Professor Beth Simone Noveck, director of the GovLab, will discuss how, arguing that we cannot solve todayís problems with yesterdayís toolkit. Their conversation will explore the future of work in the public sector. They will discuss the mindset and the skillset of the public entrepreneur, the 21st century public servant who knows how to use both data and collective intelligence to tackle challenges more effectively and legitimately. They will talk about the demands of Covid-19 for governing and the lessons learned and what some of the innovative governments are doing globally to change how they work for the better.</span>
+            <span class="session-presenter">Beth Simone Noveck <span class="session-presenter-title">Director, The GovLab</span></span>
+            <span class="session-presenter">Alistair Croll <span class="session-presenter-title">Founder, Solve for Interesting</span></span>
+        </div>
+    
+        <div class="session session-3 track-1" style="grid-column: track-1-start / track-5-end; grid-row: time-0735 / time-0755;">
+            <span class="session-time">7:35 - 7:55</span>
+        <h3 class="session-title">RADICAL TRANSPARENCY: HOW OPENNESS CHANGES THE PUBLIC SECTOR</h3>
+        <span class="session-track">Open Source is more than a software license. Itís a mindset for working in the open, transparently, with a recognition that weíre stronger together. Today, Open is a stack: Open compute, open code, open data, open services, and open communities. In this session, Red Hat Chief Strategist Todd Wilson discusses the impact an open mindset has the behaviour of teams and the impact of organizations.
+    
+    Using examples from his time as Director of Enterprise Devops for the Government of British Columbia, Todd will explain how open, inclusive communities can mitigate the siloed nature of government. From open-ended approaches to procurement, to working openly on projects by default, weíll learn how radically transparent organizations helps us talk about whatís possible and reach across departments.</span>
+            <span class="session-presenter">Todd Wilson <span class="session-presenter-title">Chief Strategist, Canada, Red Hat</span></span>
+            <span class="session-presenter">Alistair Croll <span class="session-presenter-title">Founder, Solve for Interesting</span></span>
+        </div> 
+    
+        <div class="session session-4 track-1" style="grid-column: track-1-start / track-5-end; grid-row: time-0755 / time-0815;">
+            <span class="session-time">7:55 - 8:15</span>
+        <h3 class="session-title">PEOPLE-POWERED CIVIC ENGAGEMENT IN THE DIGITAL - AND NOW PANDEMIC - AGE</h3>
+        <span class="session-track">The 2020 election (not to mention the 2020 Census and redistricting process) in the United States was already going to be special, and that was before the Covid-19 pandemic. How millions of people vote, and how they encourage others to vote ñ looks very different than any election weíve seen before.
+    
+    Time spent online, the volume of digital content, and political polarization are all trending upward. Simultaneously, trust and civility in our institutions and information ecosystems is declining, putting particular importance on the power of the messenger. This is particularly true for underrepresented communities, who continue to face obstacles to the ballot box and are targets of digital disinformation.
+    
+    This talk will touch on some of the most prominent strategies, tools, tactics ñ and also persistent challenges ñ that drove digitally savvy civic engagement in this momentous election year. From the utilization of peer-to-peer messaging via SMS and FB messenger to the simple, yet scientifically informed tactic of asking three friends to vote, weíll take a look at some of the most prominent practices that integrate tried and true people-powered organizing with best in class technology. And weíll take a few guesses at whatís to come in the brave new world of civic engagement for the decade ahead.</span>
+            <span class="session-presenter">Nick Chedli Carter <span class="session-presenter-title">Managing Director, Resilient Democracy</span></span>
+        </div> 
+    
+        <div class="session session-5 track-1" style="grid-column: track-1-start / track-5-end; grid-row: time-0815 / time-0825;">
+            <span class="session-time">8:15 - 8:25</span>
+        <h3 class="session-title">DIGITAL TRUST AND ENTERPRISE</h3>
+        <span class="session-track">The pivot to digital delivery is undeniable. And accelerating. As we focus on improving digital delivery we need to ensure we foster trust in the solutions being deployed. Building and maintaining trust must not be an after thought, it needs to be built in right from the start. A failure in one system will be felt by all. We are all in this together, so will be important for us to take a collective approach. Join us as we discuss how we can adopt collective approaches and explore what happens if we donít.</span>
+            <span class="session-presenter">Paul Glover <span class="session-presenter-title">President, Shared Services Canada (SSC)</span></span>
+        </div> 
+    
+        <div class="session session-6 track-1" style="grid-column: track-1-start / track-5-end; grid-row: time-0825 / time-0855;">
+            <span class="session-time">8:25 - 8:55</span>
+        <h3 class="session-title">COVID-19 AND ECONOMIC RECOVERY*: NEW ZEALAND'S LESSONS LEARNT ON DIGITAL INCLUSION AND RESILIENCE</h3>
+        <span class="session-track">New Zealand, like the rest of the word, faced unprecedented circumstances in late March 2020. Lockdown due to the COVID-19 epidemic meant everyone but essential workers were asked to stay home, except to exercise locally or access essential goods and services. Hundreds of thousands of people literally overnight ñ began working from home instead of the office, schools and universities moved to online learning, and businesses shifted frantically to online ordering and payment to implement contactless purchase solutions.
+    
+    The internet and digital devices became the main access point to the world outside ìour bubblesî. This ìhero of the dayî was used to get help to people who needed it, build community, share official information and get updates from our officials and elected representatives. But it also quickly highlighted the size and extent of the digital inclusion ìgapî and with it the social and economic impact on these New Zealanders. In the COVID-19 recovery phase,  challenges for digitally-excluded groups are expected to become more pronounced, and the impact of social inequality is likely to be exacerbated. New groups of New Zealanders have also become vulnerable to digital exclusion, such as those in the business sector. For example, the month after lockdown was lifted in New Zealand seventeen percent of small and medium-sized enterprises (SMEs) were considered not digitally savvy, needing additional support to stay financially viable and retain their employees.≤
+    
+    Work to ensure digital inclusion has been underway for many years in New Zealand ñ with iwi, hapu, Community organisations, businesses, libraries, philanthropic organisations, charities, and local and central government all providing important services across the 4 elements* of digital inclusion.COVID-19 however in its unprecedented way has really highlighted the importance of not only being able to access and navigate the digital realm, but the need to become digitally resilient.</span>
+            <span class="session-presenter">Ann-Marie Cavanagh <span class="session-presenter-title">Deputy Government Chief Digital Officer and Deputy Chief Executive Digital Public ServiceDepartment of Internal Affairs (NZ)</span></span>
+        </div> 
+    
+        <div class="session session-8 track-1" style="grid-column: track-1-start / track-5-end; grid-row: time-0855 / time-0900;">
+             <span class="session-time">8:55 - 09:00</span>
+         <h3 class="session-title">MORNING WRAP UP</h3>
+            <span class="session-track">Your hosts wrap up the morning and get you ready for an afternoon of learning and networking!</span>
+        <span class="session-presenter">Alistair Croll <span class="session-presenter-title">Co-founder & Chair, FWD50</span></span>
+        </div>  
+    
+        <div class="session session-8 track-all" style="grid-column: track-1-start / track-5-end; grid-row: time-0900 / time-1030;">
+            <h3 class="session-title">Morning break</h3>
+        </div>
+    
+    <!-- 1030 AM START --!>
+    
+        <div class="session session-9 track-1" style="grid-column: track-1-start / track-1-end; grid-row: time-1030 / time-1110;">
+             <span class="session-time">10:30 - 11:10</span>
+         <h3 class="session-title">GETTING CHAT RIGHT: ESTONIA'S GRAND PLAN FOR CITIZEN INTERACTION</h3>
+            <span class="session-track">ìYour team is like the SEAL Team Six for data.î
+    
+    The New York City Mayorís Office of Data Analytics (MODA) history is filled with stories of responding in times of crisis and emergency over the past decade. Join New York Cityís Chief Analytics Officer Kelly Jin and Ryan Zirngibl, MODA Data Scientist, to hear stories and takeaways for your organization at the intersection of emergency data, decision-making, and policy from how MODA this year:
+    <br>
+    <ol>
+    <li>
+    Early in the pandemic joined the NYC emergency operations center ñ the Cityís response nerve center ñ and used data to tackle understanding supplies of critical personal protective equipment across the City and hospitals.</li>
+    <li>Delivered daily insights and recommendations to improve social distancing outreach for New York Cityís many neighborhoods and business types.</li>
+    <li>Launched the NYC Recovery Data Partnership, a first-of-its- effort for community, non-profit, and private organizations to share data free-of-charge with the City to aid in Covid-19 response and recovery efforts.</li></ol></span>
+        <span class="session-presenter">Kelly Jin <span class="session-presenter-title">Chief Analytics Officer and DirectorMayorís Office of Data Analytics, City of New York</span></span>
+        <span class="session-presenter">Ryan Zirngibl <span class="session-presenter-title">Data ScientistNYC Mayorís Office of Data Analytics</span></span>
+        <span class="attendee">AMANDA</span>
+        </div>
+    
+        <div class="session session-9 track-2" style="grid-column: track-2-start / track-2-end; grid-row: time-1030 / time-1155;">
+             <span class="session-time">10:30 - 12:00</span>
+         <h3 class="session-title">REGIONAL DIGITAL GOVERNMENT SUMMIT</h3>
+            <span class="session-track">Back for its second year, regional government leaders gather to tackle the unique challenges of municipal-, provincial-, and state-level public service. This year digital leaders from Ontario, State of California, British Columbia and the State of Georgia in partnership with non-profit Code for Canada have planned an afternoon that will focus on four major themes: driving product-driven organizations, up-skilling the public service, digital delivery in the COVID-era and storytelling as a means of knowledge sharing. The summit will end with an interactive virtual networking circuit to connect attendees with digital mentors and reflect on where we go from here!</span>
+        <span class="session-presenter">Many presenters</span>
+        </div>
+    
+        <div class="session session-9 track-3" style="grid-column: track-3-start / track-3-end; grid-row: time-1030 / time-1155;">
+             <span class="session-time">10:30 - 12:00</span>
+         <h3 class="session-title">WHAT HAPENS TO HUMANITY WHEN BIOLOGY AND DIGITAL TECHNOLOGY MERGE?</h3>
+            <span class="session-track">In the coming years, biodigital technologies could be woven into our lives in the way that digital technologies are now. Biological and digital systems are converging, and could change the way we work, live, and even evolve as a species. More than a technological change, this biodigital convergence may transform the way we understand ourselves and cause us to redefine what we consider human or natural.
+    
+    Biodigital convergence will impact our economy, ecosystems, and society. Being prepared to support it, while managing its risks with care and sensitivity, will shape the way we navigate social and ethical considerations, as well as guide policy and governance conversations.
+        <span class="session-presenter">Eric Ward <span class="session-presenter-title">Senior Director, Policy Horizons Canada</span></span>
+        <span class="session-presenter">Pierre-Olivier DesMarchais <span class="session-presenter-title">Senior Strategic Foresight Analyst, Policy Horizons Canada</span></span>
+        <span class="session-presenter">Avalyne Diotte <span class="session-presenter-title">Foresight Analyst, Policy Horizons Canada</span></span>
+        </div>
+    
+        <div class="session session-9 track-4" style="grid-column: track-4-start / track-4-end; grid-row: time-1030 / time-1110;">
+             <span class="session-time">10:30 - 11:10</span>
+         <h3 class="session-title">BECOMING DIGITAL FOR CITIZENS: PERSPECTIVES FROM THE UNITED STATES AND UNITED KINGDOM</h3>
+            <span class="session-track">Governments at all levels continue to focus on becoming digital to improve citizen services and experience as a priority, but not all are seeing the same level of success. What are the keys to success in becoming digital and meeting citizen expectations? What organizational capabilities do you need to navigate the business challenges caused by COVID-19? How are leadership roles evolving and how are organizations successfully dealing with some of the top barriers to successful digital transformations?
+    
+    Join our panel of speakers from the United States and United Kingdom as they discuss making digital real, including dealing with barriers like cultural change and change management, as well as how business agility, rethinking the supply chain and enabling the future of work are essential to navigating the impacts of COVID-19.</span><br>
+        <span class="session-presenter">Jon Rychakslki <span class="session-presenter-title">Assistant Secretary for Management & Chief Financial Officer, United States Department of Veterans Affairs</span></span>
+        <span class="session-presenter">Marc Campbell <span class="session-presenter-title">Senior Vice President, CGI</span></span>
+        <span class="session-presenter">Lindsay McGranaghan <span class="session-presenter-title">Senior Vice President Consulting Services, CGI Scotland, UK</span></span>
+        <span class="session-presenter">Dr. Jim Peake <span class="session-presenter-title">Senior Vice President, CGI Federal, Former United States Secretary of Veterans Affairs</span></span>
+        </div>
+    
+        <div class="session session-9 track-5" style="grid-column: track-5-start / track-5-end; grid-row: time-1030 / time-1110;">
+             <span class="session-time">10:30 - 11:10</span>
+         <h3 class="session-title">SCALING OUT ROBOTIC PROCESS AUTOMATION FOR YOUR ORGANIZATION: TRANSPORT CANADA'S JOURNEY</h3>
+            <span class="session-track">In a world of budgetary constraints and increased demands organizations are continually challenged to find better ways to deliver value. Transport Canada has implemented Robotics Process Automation (RPA) to achieve process efficiencies, internal control improvements and service delivery transformation. This dynamic session that will explore Transport Canadaís RPA journey; outlining what RPA is, discussing the types of processes that lend themselves well to RPA, and highlighting TCís key lessons learned along the way.</span>
+        <span class="session-presenter">Melanie Cockerline <span class="session-presenter-title">Chief, Financial Policy & Systems, Transport Canada</span></span>
+        <span class="session-presenter">Irina Krasteleva <span class="session-presenter-title">Director, Digital Services Directorate, Transport Canada</span></span>
+        </div>
+    
+    <!-- 1115 AM START --!>
+    
+        <div class="session session-10 track-1" style="grid-column: track-1-start / track-1-end; grid-row: time-1115 / time-1155;">
+             <span class="session-time">11:15 - 11:55</span>
+         <h3 class="session-title">HOW DO YOU USE TECHNOLOGY TO MITIGATE THE WORST PANDEMIC IN RECENT HISTORY?</h3>
+            <span class="session-track">How do you use technology to mitigate the worst pandemic in recent history? If youíre DJ Patil, you bring your background in data science, and your experience in the public and private sector, to bear. In 2020, DJ took months off from his role as head of technology at Devoted Health to be an unpaid volunteer supporting Californiaís efforts on COVID-19. His 6 lessons learned to get ready for the next wave of COVID is a rallying cry for how we need to tackle the Coronavirus, but also a warning about the consequences of neglecting public health.
+    
+    In this live conversation with FWD50 chair Alistair Croll, weíll learn what workedóand what needs to be built. Weíll hear how his team took modeling from weeks to hours, giving vital near-real-time understanding of spread. And weíll look at where systems broke down, and how they can be fixed.</span>
+        <span class="session-presenter">DJ Patil <span class="session-presenter-title">Chief Technology Officer, Devoted Health, Senior Fellow, Harvard Kennedy School</span></span>
+        <span class="session-presenter">Alistair Croll <span class="session-presenter-title">Founder, Solve for Interesting</span></span>
+        <span class="attendee">AMANDA</span>
+        </div>
+    
+        <div class="session session-9 track-5" style="grid-column: track-5-start / track-5-end; grid-row: time-1115 / time-1155;">
+             <span class="session-time">11:15 - 11:55</span>
+         <h3 class="session-title">WHAT CAN I DO? AUTHENTIC LEADERSHIP TO CREATE INCLUSIVE SPACES FOR BIPOCQ</h3>
+            <span class="session-track">Weíve all seen empty statements about diversity and inclusion. We all claim to be anti-racists, but things arenít changing, why arenít BIPOCQ candidates applying to our jobs, why arenít they staying in our organizations? Why arenít they rising up to leadership positions?
+    
+    How are we suppose to design digital programs, services, and systems for everyone if we canít create teams that are representative of a full spectrum of lived experiences?
+    
+    This discussion, featuring an all BIPOCQ leadership panel, will be an honest talk about first hand experiences and what it takes to bring positive and progressive change within your organizations.
+    
+    Come to this talk if youíre too shy to ask.
+    
+    Come to this talk if you feel think there is a ceiling for you.
+    
+    Come to this talk because we need your help.</span>
+        <span class="session-presenter">Ryan Hum <span class="session-presenter-title">Chief Information Officer and Vice President of Data and Information Management, Canada Energy Regulator</span></span>
+        <span class="session-presenter">Hillary Hartley <span class="session-presenter-title">Chief Digital & Data Officer, Deputy Minister, Ontario Digital Service (Treasury Board Secretariat)</span></span>
+        <span class="session-presenter">Denis Carignan <span class="session-presenter-title">President, PLATO Testing Group of Companies</span></span>
+        <span class="session-presenter">Elizabeth (Dori) Tunstall, PhD <span class="session-presenter-title">Dean, Faculty of Design, OCAD University, Toronto, Canada</span></span>
+        </div>
+    
+        <div class="session session-10 track-5" style="grid-column: track-5-start / track-5-end; grid-row: time-1115 / time-1155;">
+             <span class="session-time">11:15 - 11:55</span>
+         <h3 class="session-title">gcxchange. The future of communication and collaboration in the GC</h3>
+            <span class="session-track">Actively communicating and openly collaborating across various digital government platforms sounds easy enough. But in practice, it can sometimes be more complicated than it needs to be. The Government of Canada (GC) aims to tackle this challenge with their new platform, gcxchange. Join Treasury Board of Canada Secretariatís Melanie Love, Chief within Strategic
+    Communications and Ministerial Affairs, as she and her team describes how gxchange will revolutionize the way we communicate within the GC, by taking on an active, editorial approach to curating, creating and sharing content and information government-wide.</span>
+        <span class="session-presenter">Christopher Jaja <span class="session-presenter-title">Director, Enterprise Digital Workspace, Treasury Board of Canada Secretariat</span></span>
+        <span class="session-presenter">Melanie Love <span class="session-presenter-title">Chief, Strategic Communications and Ministerial Affairs, Treasury Board of Canada Secretariat</span></span>
+        </div>
+    
+    <!-- 11:55AM START --!>
+    
+        <div class="session session-7 track-1" style="grid-column: track-1-start / track-5-end; grid-row: time-1155 / time-1200;">
+             <span class="session-time">11:55 - 12:00</span>
+         <h3 class="session-title">CLOSING REMARKS</h3>
+        <span class="session-presenter">Alistair Croll <span class="session-presenter-title">Co-founder & Chair, FWD50</span></span>
+        </div>
+    
+        <div class="session session-1 track-topicroom" style="grid-column: track-1-start / track-1-end; grid-row: time-1200 / time-1300;">
+            <span class="session-time">12:00 - 13:00</span>
+        <h3 class="session-title">TOPIC ROOM: SCALING CIVIC TECH</h3>        
+            <span class="session-track">An open discussion about what works (and what doesnít) when it comes to coordinating and delivering community-led civic tech products.</span>
+            <span class="session-presenter">Tom Dooner <span class="session-presenter-title">Developer Evangalist, Network Team, Code for America</span></span>
+            <span class="session-presenter">CG Chen <span class="session-presenter-title">Founder, Ample Labs</span></span>
+            <span class="session-presenter">Laura Chang <span class="session-presenter-title">Strategic Initiatives Lead, Code for Canada</span></span>
+        </div>
+    
+        <div class="session session-1 track-topicroom" style="grid-column: track-3-start / track-3-end; grid-row: time-1200 / time-1300;">
+            <span class="session-time">12:00 - 13:00</span>
+        <h3 class="session-title">TOPIC ROOM: WHAT IS YOUR 15% SOLUTION? DISCOVER AND FOCUS ON WHAT EACH PERSON HAS THE FREEDOM AND RESOURCES TO DO NOW</h3>        
+            <span class="session-track">You can reveal the actions, however small, that everyone can do immediately to enact change towards diversity and inclusion in your department. At a minimum, these will create momentum. 15% solutions show that there is no reason to wait around, feel powerless, or fearful.
+    Let's help each other act while we may feel stuck. Let's focus on what is within our discretion instead of what we cannot change.
+    
+    With a very simple question, you can flip the conversation to what can be done and find solutions to big problems, like fostering inclusive leadership. Shifting a few grains of sand can trigger a landslide and change the landscape of digital government.</span>
+            <span class="session-presenter">Lequanne Collins-Bacchus <span class="session-presenter-title">Digital Advisor, Treasury Board of Canada Secretariat</span></span>
+        </div>
+    
+        <div class="session session-1 track-2" style="grid-column: track-2-start / track-2-end; grid-row: time-1200 / time-1300;">
+            <span class="session-time">12:00 - 13:00</span>
+        <h3 class="session-title">EXPO: DIGITAL DELIVERY IN THE COVID ERA</h3>        
+            <span class="session-track">To view this video with live transcription copy/paste the following link into a new browser window:
+    https://player.vimeo.com/video/474467826
+    
+    Shining a spotlight on how the public sector has answered the call of service to deliver user-centred products that meet the unique and unpredictable needs of people during a global pandemic, leveraging common components, processes and practices. Engage with the people behind the scenes of some of the most visible digital and data tools launched in 2020.</span>
+            <span class="session-presenter">Angelica "Angie" Quirarte <span class="session-presenter-title">Assistant Secretary for Digital Engagement, California Government Operations Agency</span></span>
+            <span class="session-presenter">Graham Simpson <span class="session-presenter-title">Policy and Engagement Fellow, New Jersey Office of Innovation</span></span>
+            <span class="session-presenter">Meg Towle <span class="session-presenter-title">NYC[x] Innovation Fellow and Founding Partner at North Third</span></span>
+            <span class="session-presenter">Spencer Daniels <span class="session-presenter-title">Senior Product Manager, Ontario Digital Service</span></span>
+            <span class="session-presenter">Will Alford <span class="session-presenter-title">Director of Content, Digital Services Georgia</span></span>
+    
+        </div>
+    
+        <div class="session session-1 track-topicroom" style="grid-column: track-4-start / track-4-end; grid-row: time-1200 / time-1300;">
+            <span class="session-time">12:00 - 13:00</span>
+        <h3 class="session-title">TOPIC ROOM: Topic Room with CGI: Talk to CGI's Government Experts about your Digital Journeys</h3>        
+            <span class="session-track">Talk to CGI's Global & Local Government Experts about your own Digital Journeys, and learn how we are Real Partners to our Government Clients, helping them improve their citizen services through efficient digital transformation initiatives and secure and modernized operations.</span>
+        </div>
+    
+        <div class="session session-1 track-topicroom" style="grid-column: track-5-start / track-5-end; grid-row: time-1200 / time-1300;">
+            <span class="session-time">12:00 - 13:00</span>
+        <h3 class="session-title">TOPIC ROOM: Topic Room with Element: The challenge of messaging apps for government
+    </h3>        
+            <span class="session-track">Government business is increasingly conducted by messaging apps ñ seeing sensitive data sucked into consumer-grade apps and stored in third party systems. Governments canít turn back the tide; they have to embrace messaging, but on their own terms.
+    Element's COO, Amandine Le Pape, will talk about decentralized real time communications.
+    She will explain the benefits of Matrix - an open network for secure, decentralized communication - and the Element secure messenger and collaboration platform.
+    Amandine will also talk about Element's work with various governments in Europe to set up and run digital sovereign real time communications platform supporting millions of users across government and administration.
+    The session will include a case study of Tchap, France's messaging and collaboration system for more than 300,000 users.</span>
+        </div>
+    
+    </div>
     </div>
     
     <div id="Mon" class="tabcontent">
