@@ -3,16 +3,30 @@
   <meta name="description" content="DevLab: Configure a popup">
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-  <title>ArcGIS API for JavaScript Tutorials: Configure pop-ups</title>
+  <title>Test Investigator Portal</title>
   <style>
     html,
-    body,
-    #viewDiv {
-      padding: 0;
-      margin: 0;
-      height: 100%;
-      width: 100%;
-    }
+    body {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+      }
+      #viewDiv {
+        position: absolute;
+        left: 0;
+        right: 380px;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+      }
+      #panel {
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 380px;
+      }
   </style>
   <link rel="stylesheet" href="https://js.arcgis.com/4.17/esri/themes/light/main.css">  
   <script src="https://js.arcgis.com/4.17/"></script>
